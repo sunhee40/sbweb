@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunhee Bang — Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/layout2.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="site-nav">
+    <nav class="nav-inner">
+        <a href="#" class="nav-brand">Sunhee Bang</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="./project.html">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="./resume.html" class="btn-nav">View Resume</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.getElementById('navLinks').classList.toggle('open')">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#002D56" stroke-width="2" stroke-linecap="round">
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <line x1="3" y1="12" x2="21" y2="12"/>
+                <line x1="3" y1="18" x2="21" y2="18"/>
+            </svg>
+        </button>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero-section" id="about">
+    <div class="hero-inner">
+        <div class="hero-left">
+            <h1 class="hero-title">Financial Services Leader &amp; Data Science Professional</h1>
+        </div>
+        <div class="hero-right">
+            <p class="hero-description">I am a management consultant with over 25 years of experience in the financial industry, specializing in system implementation, security valuation, and data analysis. I help clients implement strategic solutions that minimize operational risk. In addition to my expertise in finance, I am expanding my skill set in data science and web development.</p>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem;">
+                <div>
+                    <p class="hero-services-label">Expertise</p>
+                    <ul class="hero-services-list">
+                        <li>Security Valuation</li>
+                        <li>System Implementation</li>
+                        <li>Data Analytics</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="hero-services-label">Tech Skills</p>
+                    <ul class="hero-services-list">
+                        <li>SQL, Python and R</li>
+                        <li>Tableau</li>
+                        <li>Web Development</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="./resume.html" class="hero-link">
+                View full resume
+                <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path fill="#0093BD" d="M7.125 3.375v1.5h4.943l-8.693 8.693 1.058 1.057 8.692-8.692v4.942h1.5v-7.5z"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- PROFILE BANNER -->
+<section class="profile-banner">
+    <div class="profile-banner-inner">
+        <div class="profile-banner-image">
+            <img src="./images/Profile.png" alt="Sunhee Bang">
+        </div>
+        <div class="profile-banner-content">
+            <span class="accent-tag">Finance · Data · Technology</span>
+            <h2>Bridging Finance, Data, and Technology</h2>
+            <p>From leading global valuation teams at Deutsche Bank and Invesco to building data science skills at UT Austin — I bring a unique perspective that combines deep industry expertise with modern technical capabilities.</p>
+            <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+                <a href="./resume.html" class="btn-accent">View Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES / WHAT I DO -->
+<section class="features-section">
+    <div class="features-inner">
+        <div class="section-header">
+            <p class="section-label">What I Do</p>
+            <h2 class="section-title">Skills &amp; Interests</h2>
+        </div>
+        <div class="features-grid">
+
+            <!-- Consulting -->
+            <div class="feature-card">
+                <div class="feature-icon feature-icon--blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0093BD" viewBox="0 0 16 16">
+                        <path d="M12.096 6.223A5 5 0 0 0 13 5.698V7c0 .289-.213.654-.753 1.007a4.5 4.5 0 0 1 1.753.25V4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.5 4.5 0 0 1-.813-.927Q8.378 15 8 15c-1.464 0-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13h.027a4.6 4.6 0 0 1 0-1H8c-1.464 0-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10q.393 0 .774-.024a4.5 4.5 0 0 1 1.102-1.132C9.298 8.944 8.666 9 8 9c-1.464 0-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777M3 4c0-.374.356-.875 1.318-1.313C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4"/>
+                        <path d="M11.886 9.46c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382zM14 12.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+                    </svg>
+                </div>
+                <h3>Consulting</h3>
+                <p>I help clients implement tactical and strategic business solutions in their data architecture, pricing governance, and system implementation projects.</p>
+                <a href="./resume.html" class="card-link">
+                    View my resume
+                    <svg viewBox="0 0 18 18" fill="none"><path fill="currentColor" d="M7.125 3.375v1.5h4.943l-8.693 8.693 1.058 1.057 8.692-8.692v4.942h1.5v-7.5z"/></svg>
+                </a>
+            </div>
+
+            <!-- YouTube -->
+            <div class="feature-card">
+                <div class="feature-icon feature-icon--green">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#01A17A" viewBox="0 0 16 16">
+                        <path d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2m6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                    </svg>
+                </div>
+                <h3>YouTube</h3>
+                <p>I love trying different recipes — easy weeknight meals or fancy flavorful dishes. Check out my YouTube channel "The Costco Gourmet" to see what I'm cooking today.</p>
+                <a href="https://www.youtube.com/@theCostcoGourmet" class="card-link" target="_blank" rel="noopener">
+                    Visit my channel
+                    <svg viewBox="0 0 18 18" fill="none"><path fill="currentColor" d="M7.125 3.375v1.5h4.943l-8.693 8.693 1.058 1.057 8.692-8.692v4.942h1.5v-7.5z"/></svg>
+                </a>
+            </div>
+
+            <!-- Programming -->
+            <div class="feature-card">
+                <div class="feature-icon feature-icon--purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#874DCE" viewBox="0 0 16 16">
+                        <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+                    </svg>
+                </div>
+                <h3>Programming</h3>
+                <p>I have extensive experience in data cleaning and analysis using SQL, Python, and R. Currently enrolled in the Master's Data Science program at the University of Texas at Austin.</p>
+                <a href="https://www.github.com/sunhee40/" class="card-link" target="_blank" rel="noopener">
+                    View my GitHub
+                    <svg viewBox="0 0 18 18" fill="none"><path fill="currentColor" d="M7.125 3.375v1.5h4.943l-8.693 8.693 1.058 1.057 8.692-8.692v4.942h1.5v-7.5z"/></svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS TEASER -->
+<section class="projects-section">
+    <div class="projects-inner">
+        <div class="projects-heading">
+            <h2>like what you see? <em>here's more.</em></h2>
+        </div>
+        <div class="projects-grid">
+            <a href="./project.html" class="project-card">
+                <img src="./images/blackjack_img1.jpg" alt="Blackjack Game" class="project-card-image">
+                <div class="project-card-body">
+                    <p class="project-card-tag">Python · Jupyter Notebook</p>
+                    <p class="project-card-title">Blackjack Game</p>
+                </div>
+            </a>
+            <a href="https://sunhee40.github.io/tindog/" class="project-card" target="_blank" rel="noopener">
+                <img src="./images/iphone.png" alt="TinDog Website" class="project-card-image" style="object-position: center top; background:#f0f4f8;">
+                <div class="project-card-body">
+                    <p class="project-card-tag">HTML · CSS · Bootstrap</p>
+                    <p class="project-card-title">TinDog Website Design</p>
+                </div>
+            </a>
+            <a href="./resume.html" class="project-card">
+                <div style="width:100%;aspect-ratio:4/3;background:linear-gradient(135deg,#E0F7FC 0%,#D9FCF4 50%,#EEE1FD 100%);display:flex;align-items:center;justify-content:center;">
+                    <span style="font-family:'Instrument Sans',sans-serif;font-size:2.5rem;font-weight:700;color:#002D56;letter-spacing:-0.03em;">SB</span>
+                </div>
+                <div class="project-card-body">
+                    <p class="project-card-tag">Finance · Data Science</p>
+                    <p class="project-card-title">Professional Resume</p>
+                </div>
+            </a>
+        </div>
+        <a href="./project.html" class="btn-outline">View All Projects</a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+    <div class="contact-inner">
+        <h2>Say Hi to Me!</h2>
+        <p>Do you want to talk about coding while cooking yummy meals at the same time? I'd love to connect.</p>
+        <a href="mailto:sunheebang40@gmail.com" class="btn-primary">Contact Me</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div>
+            <a href="#" class="footer-brand">Sunhee Bang</a>
+            <p class="footer-tagline">Financial Services Leader &amp; Data Science Professional based in the US.</p>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:flex-end; gap:1.5rem;">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="./project.html">Projects</a>
+                <a href="./resume.html">Resume</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/sunheebang/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <img src="./images/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://www.github.com/sunhee40" target="_blank" rel="noopener" aria-label="GitHub">
+                    <img src="./images/github.svg" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom" style="max-width:1280px;margin:0 auto;">
+        <p>© 2025 Sunhee Bang. All rights reserved.</p>
+        <p>sunheebang40@gmail.com</p>
+    </div>
+</footer>
+
+</body>
+</html>
